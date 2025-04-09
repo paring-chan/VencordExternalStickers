@@ -1,0 +1,48 @@
+.extsSearchInput {
+    padding: 8px 16px;
+}
+
+.extsStickerPackList {
+    flex-grow: 1;
+    height: 0;
+    overflow-y: scroll;
+    padding: 0 16px;
+    padding-bottom: 16px;
+}
+
+.extsStickerPackTitle {
+    background-color: var(--modal-background);
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    padding: 8px 0;
+}
+
+.extsStickerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+.extsStickerButton {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    transition: border-color ease 0.2s;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    --border-color: transparent;
+}
+
+.extsStickerButton:hover {
+    --border-color: #5865f2;
+}
+
+.extsStickerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
