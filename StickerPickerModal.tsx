@@ -25,11 +25,11 @@ export const StickerPickerModal = ({ packs: packs }: { packs: StickerPack[]; }) 
     }, [packs]);
 
     return <div style={{ height: 600, display: "flex", flexDirection: "column", maxWidth: 600 }}>
-        <div
+        {/* <div
             className="extsSearchInput"
         >
             <input className={classNames.searchInput} placeholder="Search sticker" onChange={e => { }} />
-        </div>
+        </div> */}
         <div className="extsStickerPackList">
             {packs.map((pack, i) =>
                 <div key={i}>
