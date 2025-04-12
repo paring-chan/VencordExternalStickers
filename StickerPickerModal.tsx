@@ -6,15 +6,16 @@
 
 import { getCurrentChannel } from "@utils/discord";
 import { closeModal } from "@utils/modal";
-import { DraftType, UploadHandler, useEffect } from "@webpack/common";
+import { DraftType, UploadHandler } from "@webpack/common";
 
-import { classNames } from "./styles";
 import { StickerPack } from "./types";
 
 const urls: Record<string, string> = {};
 
+let lastPacks: StickerPack[] = [];
+
 export const StickerPickerModal = ({ packs: packs }: { packs: StickerPack[]; }) => {
-    useEffect(() => {
+    if (packs !== lastPacks) {
         for (const pack of packs) {
             for (const sticker of pack.stickers) {
                 if (urls[sticker.key]) continue;
@@ -22,7 +23,8 @@ export const StickerPickerModal = ({ packs: packs }: { packs: StickerPack[]; }) 
                 urls[sticker.key] = URL.createObjectURL(blob);
             }
         }
-    }, [packs]);
+        lastPacks = packs;
+    }
 
     return <div style={{ height: 600, display: "flex", flexDirection: "column", maxWidth: 600 }}>
         {/* <div
