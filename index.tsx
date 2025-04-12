@@ -30,7 +30,7 @@ const settings = definePluginSettings({
         type: OptionType.COMPONENT,
         default: [] as StickerRef[],
         component: ({ option, setValue }) => {
-            const [tempValue, setTempValue] = useState(settings.store.packs);
+            const [tempValue, setTempValue] = useState(settings.plain.packs);
 
             useEffect(() => {
                 setValue(tempValue);
