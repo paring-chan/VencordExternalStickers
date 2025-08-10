@@ -1,11 +1,11 @@
 # External Stickers
 
-Use some stickers on other somewhere easily on Vencord
+Vencord에서 타 플랫폼의 스티커(이모티콘)를 사용할 수 있게 해줍니다
 
-## Supported Platforms
+## 지원 플랫폼
 
-- DCCON
+- [x] 디시인사이드(디시콘)
 
-## Install
+## 설치
 
-Follow [Vencord's custom plugin installation guide](https://docs.vencord.dev/installing/custom-plugins/)
+[Vencord의 커스텀 플러그인 설치 가이드를 참고하세요](https://docs.vencord.dev/installing/custom-plugins/)
