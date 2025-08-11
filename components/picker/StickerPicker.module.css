@@ -1,0 +1,44 @@
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryList {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 32px;
+    gap: 8px;
+    overflow-y: scroll;
+    background-color: var(--background-base-lower);
+}
+
+.categoryList::-webkit-scrollbar {
+    display: none;
+}
+
+.searchBarContainer {
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 0 16px 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.side {
+    display: flex;
+    flex-grow: 1;
+    height: 0;
+}
+
+.settingsButton {
+    aspect-ratio: 1;
+    height: 40px;
+    min-width: 0;
+    padding: 0;
+}
+
+.settingsButton > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

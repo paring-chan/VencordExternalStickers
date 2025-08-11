@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4px;
+}
+
+.title {
+    display: flex;
+    gap: 6px;
+    color: var(--text-default);
+    font-weight: 700;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-surface-high);
+    padding: 8px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 8px 8px;
+}

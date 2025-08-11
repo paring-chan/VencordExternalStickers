@@ -1,0 +1,19 @@
+.root {
+    aspect-ratio: 1;
+    border-radius: 16px;
+    background: transparent;
+    padding: 16px;
+    transition: all ease .2s;
+}
+
+.root:hover {
+    background-color: var(--background-base-lowest);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    aspect-ratio: 1;
+}

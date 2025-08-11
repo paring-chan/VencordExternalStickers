@@ -1,0 +1,7 @@
+.root {
+    flex-grow: 1;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    overflow-y: scroll;
+}

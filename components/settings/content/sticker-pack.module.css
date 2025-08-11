@@ -1,0 +1,36 @@
+.iconPreview {
+    aspect-ratio: 1;
+    width: 150px;
+    background-color: var(--background-base-lowest);
+    border-radius: 8px;
+}
+
+.stickerList {
+    display: flex;
+    flex-direction: column;
+}
+
+.stickerListItem {
+    display: flex;
+    gap: 16px;
+    padding: 8px 0;
+    align-items: center;
+}
+
+.sticker {
+    aspect-ratio: 1;
+    width: 100px;
+    background-color: var(--background-base-lowest);
+    border-radius: 8px;
+}
+
+.stickerDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stickerActions {
+    display: flex;
+    gap: 8px;
+}
